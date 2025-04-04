@@ -1,0 +1,110 @@
+/* General styles */
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: hsl(235, 18%, 26%);
+    color: hsl(234, 29%, 20%); /* Set a consistent text color */
+}
+
+/* Flexbox container */
+body, .container {
+    display: flex;
+}
+
+.container {
+    background-color: whitesmoke;
+    padding: 15px 25px 15px 25px; /* Consistent padding */
+    justify-content: space-between;
+    align-items: flex-start; /* Use 'flex-start' for alignment */
+    border-radius: 10px; /* Optionally round the container corners */
+}
+
+/* Text container */
+.text-container {
+    padding: 70px 30px;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 52px; /* Adjusted here to avoid repetition */
+    color: hsl(234, 29%, 20%);
+}
+
+.form-container {
+    display: block;
+    width: 80%;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* Input styling */
+input[type="email"] {
+    width: 100%; /* Ensure the input stretches across the container */
+    padding: 10px 15px;
+    border: 1px solid hsl(0, 0%, 58%);
+    border-radius: 5px; /* Add border-radius for consistency */
+    box-sizing: border-box; /* To account for padding inside width */
+}
+
+/* List styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: url(assets/images/icon-list.svg) left center no-repeat;
+    padding: 12px 0 10px 35px;
+}
+
+/* Label styling */
+label {
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(0, 0%, 58%); /* Slight color for better contrast */
+}
+
+/* Button styling */
+button {
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    font-weight: 700;
+    transition: 0.3s;
+    border: none;
+    padding: 12px 20px; /* Added padding for better button size */
+    border-radius: 5px; /* Optional: rounded corners for button */
+}
+
+button:hover,
+button:active {
+    background-color: hsl(4, 100%, 67%);
+}
+
+/* Hidden class to hide elements */
+.hidden {
+    display: none;
+}
+
+/* Image styling */
+img {
+    display: block;
+    max-width: 100%; /* Ensure image fits its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Additional styling for success message */
+
+
+.success-message-container {
+    width: 80%;
+    padding-top: 30px; 
+    margin: 0 auto;
+}
+
+
